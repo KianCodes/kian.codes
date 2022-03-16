@@ -17,12 +17,12 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>Welcome!</h1>
 
         <div className={styles.grid}>
-          <Link href="/docs">
+          <a href="docs.kian.codes">
             <div className={styles.card}>
               <h2>Documentation &rarr;</h2>
               <p>Check out my documentation</p>
             </div>
-          </Link>
+          </a>
         </div>
       </main>
 
