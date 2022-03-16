@@ -5,10 +5,10 @@ const nextConfig = {
   reactStrictMode: true,
   async rewrites() {
     return [
-      {
+/*       {
         source: '/:path*',
         destination: `/:path*`,
-      },
+      }, */
       {
         source: '/docs',
         destination: `${DOCS_URL}/docs`,
