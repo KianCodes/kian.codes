@@ -11,7 +11,7 @@ const nextConfig = {
       },
       {
         source: '/docs',
-        destination: `https://kian-codes-docs.vercel.app/docs`,
+        destination: `${DOCS_URL}/docs`,
       },
       {
         source: '/blog/:path*',
