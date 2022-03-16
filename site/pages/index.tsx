@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>Welcome!</h1>
 
         <div className={styles.grid}>
-          <a href="docs.kian.codes">
+          <a href="https://docs.kian.codes/">
             <div className={styles.card}>
               <h2>Documentation &rarr;</h2>
               <p>Check out my documentation</p>
