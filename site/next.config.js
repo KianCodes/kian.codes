@@ -9,11 +9,11 @@ const nextConfig = {
         source: '/:path*',
         destination: `/:path*`,
       },
-    /*   {
-        source: '/docs',
-        destination: `${DOCS_URL}/docs`,
-      },
       {
+        source: '/docs',
+        destination: `https://kian-codes-docs.vercel.app/docs`,
+      },
+      /* {
         source: '/blog/:path*',
         destination: `${DOCS_URL}/docs/:path*`,
       }, */
