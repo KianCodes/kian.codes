@@ -1,13 +1,10 @@
-const { DOCS_URL } = process.env
+const  DOCS_URL  = process.env.DOCS_URL ?? "https://kian-codes-docs.vercel.app/"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-
-module.exports = nextConfig, {
   async rewrites() {
-    return[
+    return [
       {
         source: '/:path*',
         destination: `/:path*`,
@@ -21,5 +18,7 @@ module.exports = nextConfig, {
         destination: `${DOCS_URL}/docs/:path*`,
       },
     ]
-  }
+  },
 }
+
+module.exports = nextConfig
