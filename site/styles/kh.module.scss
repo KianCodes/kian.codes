@@ -1,0 +1,67 @@
+.root{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.buttonContainer{
+
+    padding: 3px 8px;
+    &:hover{
+        opacity: .9;
+        color:white;
+        background: linear-gradient(
+        to right,
+        white 0%,
+        #a3b2d0 1%,
+        #4e80d3 2%,
+        #4b82d4 20%, 
+        #61a0d5 30%,
+        #8ac0db 45%,
+        #b3dfec 60%,
+        #c3e8ee 65%,
+        #d9f3ed 75%,
+        #f2fdfa 85%,
+        white 100%);
+        hr{
+            height:3px;
+            background: linear-gradient(
+                to right,
+                white 0%,
+                white 35%,
+                #b3dfec 50%,
+                #d3e0dd 65%,
+                #d2d6d5 75%,
+                white 100%
+            )
+        }
+    };
+
+    hr{
+        margin:0;
+        width:1000px;
+        height: 4px;
+        border: 0px;
+        border-radius: 25%;
+        opacity: .7;
+        background: linear-gradient(
+            to right,
+            white 0%,
+            #d9d7d6 2%, 
+            #b6b4b4 5%,
+            #cccccb 40%, 
+            #e4e2e2 65%, 
+            #e9e8e8 70%,
+            #f1f1f1 75%,
+            white 100%
+        );
+    };
+}
+.buttonText{
+    padding-left: .5rem;
+    font-weight: 700;
+    font-size: 36px;
+}
+

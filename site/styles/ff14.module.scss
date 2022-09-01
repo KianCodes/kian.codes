@@ -1,0 +1,61 @@
+.container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312f31;
+}
+
+.tabContainer{
+    width: 250px;
+    height:50px;
+    border: 2px solid #e3c388;
+
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    padding:0px 0.5px;
+}
+
+%tabButton{
+    width:33%;
+    margin-top: 3px;
+    margin-bottom:  3px;
+    border: 0.5px solid #959595;
+    color: #cfcfcf;
+    box-sizing: border-box;
+    background: linear-gradient(
+        to bottom,
+        #838383 0%, 
+        #5c5c5c 50%, 
+        #464646 50%, 
+        #5a5a5a 100%
+    );
+    &:hover{
+        color:#e3cea9;
+        border-color: #d3d0ba;
+        background: linear-gradient(
+            to bottom,
+            #ada88e 0%, 
+            #8e8769 50%, 
+            #7e7755 50%, 
+            #a29d7e 100%
+        );
+    }
+}
+
+.tabButtonLeft{
+    @extend %tabButton;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 2.5px;
+}
+.tabButtonMiddle{
+    @extend %tabButton;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.tabButtonRight{
+    @extend %tabButton;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 2.5px;
+}
