@@ -7,7 +7,7 @@ interface IMainMenuButton {
 
 const MainMenuButton = ({children} : IMainMenuButton) => {
   return (
-    <div>
+    <div className={styles.button}>
         <span className={styles.buttonText}>{children}</span>
         <hr/>
     </div>
