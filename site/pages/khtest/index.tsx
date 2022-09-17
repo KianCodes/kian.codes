@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styles from 'styles/kh.module.scss'
 import MainMenuButton from 'components/kingdom-hearts/MainMenuButton'
 import DescriptionBox from 'components/kingdom-hearts/DescriptionBox'
-const index = () => {
+const KHHome = () => {
   const [description, setDescription] = useState<string>('Learn more about me')
   const [selection, setSelection] = useState<number>(0)
   const menuButtons = [
@@ -46,4 +46,4 @@ const index = () => {
   )
 }
 
-export default index
+export default KHHome
