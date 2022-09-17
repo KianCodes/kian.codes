@@ -176,6 +176,29 @@
   font-family: 'KH-Normal-Menu';
 }
 
+.cornerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height: 40px;
+  width: 400px;
+  color: white;
+  font-size: 18px;
+  font-family: 'KH-Normal-Menu';
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to left,
+    #223594 0%,
+    #3b4b9f 20%,
+    #6b76b8 40%,
+    #a0a7db 60%,
+    #cecfeb 80%,
+    white 100%
+  );
+}
 @keyframes fade {
   0% {
     opacity: 0.9;

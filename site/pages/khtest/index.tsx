@@ -4,6 +4,7 @@ import MainMenuButton from 'components/kingdom-hearts/MainMenuButton'
 import DescriptionBox from 'components/kingdom-hearts/DescriptionBox'
 import DevelopedBy from 'components/kingdom-hearts/DevelopedBy'
 import Version from 'components/kingdom-hearts/Version'
+import CornerButton from 'components/kingdom-hearts/CornerButton'
 
 const KHHome = () => {
   const [description, setDescription] = useState<string>('Learn more about me')
@@ -44,6 +45,7 @@ const KHHome = () => {
       </section>
       <DevelopedBy />
       <Version />
+      <CornerButton />
       <DescriptionBox description={description} selection={selection} />
     </div>
   )
