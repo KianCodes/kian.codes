@@ -3,6 +3,8 @@ import styles from 'styles/kh.module.scss'
 import MainMenuButton from 'components/kingdom-hearts/MainMenuButton'
 import DescriptionBox from 'components/kingdom-hearts/DescriptionBox'
 import DevelopedBy from 'components/kingdom-hearts/DevelopedBy'
+import Version from 'components/kingdom-hearts/Version'
+
 const KHHome = () => {
   const [description, setDescription] = useState<string>('Learn more about me')
   const [selection, setSelection] = useState<number>(0)
@@ -41,9 +43,8 @@ const KHHome = () => {
         ))}
       </section>
       <DevelopedBy />
-      <footer>
-        <DescriptionBox description={description} selection={selection} />
-      </footer>
+      <Version />
+      <DescriptionBox description={description} selection={selection} />
     </div>
   )
 }
